@@ -74,7 +74,7 @@ function getComputerChoice () {
       if (humanScore > computerScore) {
         console.log (`You win with ${humanScore} points`)
       } else if (computerScore > humanScore) {
-        console.log (`You lose, your score was ${humanScore} and the computer's score was     ${computerScore}`)
+        console.log (`You lose, your score was ${humanScore} and the computer's score was ${computerScore}`)
       } else {
         console.log(`The game is a draw. Your score was ${humanScore} and the computer's score was ${computerScore}`)
       }
