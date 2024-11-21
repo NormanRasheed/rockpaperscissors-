@@ -24,9 +24,9 @@ function getComputerChoice () {
       humanChoice = humanChoice;
       computerChoice = getComputerChoice();
 
-      const msg = document.querySelector(".message");
-      const hscore = document.querySelector(".player");
-      const cscore = document.querySelector(".computer");
+      let msg = document.querySelector(".message");
+      let hscore = document.querySelector(".player");
+      let cscore = document.querySelector(".computer");
       //Draws
       if (humanChoice === "rock" && computerChoice === "rock") {
         msg.textContent = "It's a draw";
@@ -80,18 +80,18 @@ function getComputerChoice () {
       }
     }
 
-      if (humanScore > computerScore) {
-        msg.textContent = `You win with ${humanScore} points`;
-        console.log (`You win with ${humanScore} points`)
-      }
-      if (computerScore > humanScore) {
-        msg.textContent = `You lose, your score was ${humanScore} and the computer's score was ${computerScore}`;
-        console.log (`You lose, your score was ${humanScore} and the computer's score was ${computerScore}`)
-      }
-      if (computerScore === humanScore){
-        msg.textContent = `The game is a draw. Your score was ${humanScore} and the computer's score was ${computerScore}`;
-        console.log(`The game is a draw. Your score was ${humanScore} and the computer's score was ${computerScore}`)
-      }
+      // if (humanScore > computerScore) {
+      //   msg.textContent = `You win with ${humanScore} points`;
+      //   console.log (`You win with ${humanScore} points`)
+      // }
+      // if (computerScore > humanScore) {
+      //   msg.textContent = `You lose, your score was ${humanScore} and the computer's score was ${computerScore}`;
+      //   console.log (`You lose, your score was ${humanScore} and the computer's score was ${computerScore}`)
+      // }
+      // if (computerScore === humanScore){
+      //   msg.textContent = `The game is a draw. Your score was ${humanScore} and the computer's score was ${computerScore}`;
+      //   console.log(`The game is a draw. Your score was ${humanScore} and the computer's score was ${computerScore}`)
+      // }
       playRound(humanChoice, getComputerChoice())
     })
   })
